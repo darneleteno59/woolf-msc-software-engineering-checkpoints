@@ -12,7 +12,7 @@ This repository contains all checkpoints, assessments, notes, and practical exer
 | 01       | Welcome & Environment SETUP                                                   | ✅ Completed   |
 | 02       | Introduction to Problem-Solving Techniques: Part 1 : Intro to the Web         | ✅ Completed   |
 | 03       | Practical Software Engineering : Integration and Version Control with Git     | ✅ Completed   |
-| 03       | Front End UI UX Development : HTML Basics                                     | 🚧 In Progress |
+| 04       | Front End UI UX Development : HTML Basics                                     | 🚧 In Progress |
 
 ## Goals
 
