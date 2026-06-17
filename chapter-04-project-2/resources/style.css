@@ -1,0 +1,386 @@
+:root {
+  --footer-bg: #111111; /* Fond sombre et élégant */
+  --footer-text: #e0e0e0; /* Texte principal */
+  --text-muted: #999999; /* Texte secondaire / description */
+  --input-bg: #1a1a1a; /* Fond de l'input légèrement plus clair que le footer */
+  --input-border: #333333; /* Bordure de l'input */
+  --accent-color: #ffffff; /* Couleur du bouton (texte) et focus */
+  --accent-bg: #333333; /* Fond du bouton au survol */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+/* 
+  font-family: "DynaPuff", system-ui;
+  font-family: "Chewy", system-ui;
+*/
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DynaPuff", system-ui;
+}
+
+h2 {
+  color: #252b42;
+  margin-bottom: 20px;
+}
+
+/* Utils */
+.exposed {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+/* Header */
+
+.header {
+  position: relative;
+  order: 0;
+}
+.header-container {
+  background-color: #fff;
+  padding: 20px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo-link {
+  color: #fa4a0c;
+  font-family: "DynaPuff", system-ui;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-burger-menu-icon,
+.navbar-burger-close-icon {
+  cursor: pointer;
+}
+
+.navbar-burger-menu-icon-close {
+  width: 24px;
+}
+
+.navbar-burger-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  order: 0;
+
+  z-index: 2;
+
+  padding: 20px;
+
+  background-color: #fff;
+}
+.navbar-burger-menu-list {
+  padding-top: 20px;
+}
+.navbar-wrapper-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-burger-menu-item {
+  margin-bottom: 14px;
+}
+.navbar-burger-menu-item-link,
+.navbar-wrapper-menu-item-link {
+  display: block;
+  color: #252b42;
+  font-family: "Chewy", system-ui;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.navbar-burger-menu-item-link-active,
+.navbar-wrapper-menu-item-link-active {
+  color: #fa4a0c;
+}
+.navbar-burger-menu-item-link:hover,
+.navbar-wrapper-menu-item-link:hover {
+  color: #fa4a0c;
+}
+
+/*  */
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+.hero-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("./assets/images/pexels-gonzalo-acuna-166058093-10922927.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content {
+  padding: 40px 20px;
+}
+
+.hero,
+.appetizers,
+.main-courses,
+.desserts {
+  padding: 40px 20px;
+}
+
+.appetizers ul,
+.main-courses ul,
+.desserts ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.appetizers ul li,
+.main-courses ul li,
+.desserts ul li {
+  margin-bottom: 14px;
+}
+
+.appetizers ul li p,
+.main-courses ul li p,
+.desserts ul li p {
+  margin-bottom: 12px;
+}
+
+.appetizers ul li img,
+.main-courses ul li img,
+.desserts ul li img {
+  width: 100%;
+}
+
+.appetizers-item-title,
+.main-courses-item-title,
+.desserts-item-title {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #fa4a0c;
+  font-family: "Chewy", system-ui;
+}
+
+/*  */
+.contact-container {
+  height: 240px;
+  width: 100%;
+  padding-top: 40px;
+  background-image: url("./assets/images/pexels-gonzalo-acuna-166058093-10922928.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact-content {
+  text-align: center;
+}
+.contact-content a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: #fff;
+  font-family: "Chewy", system-ui;
+  background-color: #fa4a0c;
+}
+
+/*  */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #252b42;
+}
+.hero-title .commerce-type,
+.hero-title .restaurant-name {
+  font-size: 48px;
+}
+
+.commerce-type,
+.restaurant-name {
+  font-family: "DynaPuff", system-ui;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+.restaurant-name {
+  color: #fa4a0c;
+}
+.commerce-type {
+  color: #fff;
+}
+.footer-about {
+  width: 100%;
+  text-align: center;
+}
+.footer-company-slogan {
+  color: #fff;
+  font-family: "Chewy", system-ui;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* --- Section Newsletter --- */
+.footer-newsletter {
+  text-align: center;
+  max-width: 550px;
+}
+
+.newsletter-title {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.newsletter-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* --- Formulaire Newsletter --- */
+.newsletter-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+/* Effet visuel quand l'utilisateur clique sur le champ */
+.form-group:focus-within {
+  border-color: #666666;
+}
+
+.newsletter-input {
+  flex: 1;
+  background-color: var(--input-bg);
+  border: none;
+  padding: 8px 20px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #555555;
+}
+
+.newsletter-btn {
+  background-color: var(--accent-color);
+  color: var(--footer-bg);
+  border: none;
+  padding: 0 28px;
+  font-family: "Chewy", system-ui;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Footer subcontent */
+
+.footer-socials-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-socials-media-icon {
+  width: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-burger {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    display: block;
+  }
+
+  .appetizers,
+  .main-courses,
+  .desserts {
+    padding: 40px;
+  }
+
+  .hero-title .commerce-type,
+  .hero-title .restaurant-name {
+    font-size: 96px;
+  }
+
+  .appetizers ul,
+  .main-courses ul,
+  .desserts ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  /*  */
+  .contact-container {
+    height: 340px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .appetizers,
+  .main-courses,
+  .desserts {
+    padding: 40px 80px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+  }
+
+  .footer-about {
+    width: auto;
+  }
+}
