@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Web Page</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-content">
+          <!-- Header Logo -->
+          <div class="header-logo">
+            <div class="header-logo-container">
+              <div class="header-logo-content">
+                <a href="index.html" class="header-logo-link">
+                  <div class="header-logo-puce"></div>
+                  <p class="header-logo-name">Sara photographie</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Navigation Bar -->
+          <nav class="navbar">
+            <div class="navbar-burger">
+              <div class="navbar-burger-shape openMenu">
+                <div class="navbar-burger-shape-title">menu</div>
+                <div class="navbar-burger-shape-group">
+                  <div class="navbar-burger-shape-item"></div>
+                  <div class="navbar-burger-shape-item"></div>
+                  <div class="navbar-burger-shape-item"></div>
+                </div>
+              </div>
+              <div class="navbar-menu closeMenu">
+                <ul class="navbar-menu-list closeMenu">
+                  <li class="navbar-menu-item">
+                    <a class="navbar-menu-item-link" href="#home-section">home</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a class="navbar-menu-item-link" href="#about-section">about</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a class="navbar-menu-item-link" href="#work-section">work</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a class="navbar-menu-item-link" href="#resume-section">resume</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a class="navbar-menu-item-link" href="#contact-section">contact</a>
+                  </li>
+                </ul>
+                <div class="navbar-burger-close">
+                  <img class="closeMenu" src="./assets/close-x.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-wrapper closeMenu">
+              <ul class="navbar-menu-list">
+                <li class="navbar-menu-item">
+                  <a class="navbar-menu-item-link" href="index.html">home</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a class="navbar-menu-item-link" href="#about-section">about</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a class="navbar-menu-item-link" href="#work-section">work</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a class="navbar-menu-item-link" href="#resume-section">resume</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a class="navbar-menu-item-link" href="#contact-section">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero-section" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-profil">
+              <div class="hero-profil-picture">
+                <img
+                  src="./assets/images/pexels-rachel-claire-6146157.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="hero-about">
+              <h1 class="hero-title">
+                Saisir l’instant, raconter votre histoire.
+              </h1>
+
+              <div class="hero-description">
+                Bienvenue dans mon univers visuel. Je suis Sara, photographe
+                passionnée dédiée à capturer la beauté brute, les émotions
+                spontanées et les moments précieux de votre vie. À travers mon
+                objectif, chaque détail devient un souvenir intemporel.
+              </div>
+              <div class="hero-btn-group">
+                <button type="button" class="hero-btn hero-btn-discover">
+                  Découvrir mon travail
+                </button>
+                <button type="button" class="hero-btn hero-btn-contact">
+                  Me contacter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section" class="about">
+        <div class="about-container">
+          <div class="about-content">
+            <h2 class="about-title">À propos de moi</h2>
+            <div class="about-behind-goal">
+              <div class="about-behind-goal-group">
+                <h3 class="about-subtitle">Derrière l'objectif...</h3>
+                <p class="about-description">
+                  Hello ! Moi c'est Sara. Ma fascination pour la photographie a
+                  commencé le jour où j'ai compris qu'une image pouvait exprimer
+                  ce que les mots échouent parfois à dire. Spécialisée dans le
+                  portrait, le reportage de vie (lifestyle) et la photographie
+                  événementielle, je cherche avant tout à capturer
+                  l'authenticité. Pas de poses figées ni de sourires forcés. Mon
+                  approche repose sur le naturel, la lumière spontanée et la
+                  complicité. Que ce soit pour un projet professionnel, une
+                  séance en famille ou un événement unique, je mets mon
+                  expertise et ma sensibilité au service de votre projet pour
+                  créer des images qui vous ressemblent.
+                </p>
+              </div>
+
+              <div class="about-behind-goal-group">
+                <video
+                  width="100%"
+                  height="240"
+                  controls
+                  autoplay
+                  loop
+                  id="myVideo"
+                >
+                  <source
+                    src="./assets/videos/13768611-hd_1920_1080_24fps.mp4"
+                    type="video/mp4"
+                  />
+                  Please Check the video extension.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work-section" class="work">
+        <div class="work-container">
+          <div class="work-content">
+            <h2 class="work-title">Work (Portfolio / Réalisations)</h2>
+            <div class="work-behind-goal">
+              <h3 class="work-subtitle">Mon Travail</h3>
+              <h4 class="work-subtitle-infos">
+                Une sélection de moments capturés au fil du temps.
+              </h4>
+              <div class="work-description">
+                Chaque projet est une nouvelle aventure humaine et artistique.
+                Explorez mes univers de prédilection :
+                <ul class="work-projects">
+                  <li class="work-projects-item">
+                    Portraits & Mode : Mettre en valeur votre personnalité à
+                    travers des jeux de lumière et des expressions uniques.
+                  </li>
+                  <li class="work-projects-item">
+                    Lifestyle & Famille : Des tranches de vie authentiques,
+                    capturées sur le vif, à la maison ou en extérieur.
+                  </li>
+                  <li class="work-projects-item">
+                    Événements & Reportages : L'essence de vos moments forts
+                    (mariages, lancements, concerts) immortalisée avec
+                    discrétion et dynamisme.
+                  </li>
+                </ul>
+
+                <div class="work-galery">
+                  <div class="work-galery-content">
+                    <div class="work-galery-item">
+                      <img
+                        src="./assets/images/pexels-aksioart-2568413.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="work-galery-item">
+                      <img
+                        src="./assets/images/pexels-alipazani-2797147.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="work-galery-item">
+                      <img
+                        src="./assets/images/pexels-alipazani-2811087.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="work-galery-item">
+                      <img
+                        src="./assets/images/pexels-kate-andreeshcheva-35129697-15870626.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="work-galery-item">
+                      <img
+                        src="./assets/images/pexels-krivitskiy-20459107.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="work-galery-item">
+                      <img
+                        src="./assets/images/pexels-lean-leta-1537441-3389707.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume-section" class="resume">
+        <div class="resume-container">
+          <div class="resume-content">
+            <h2 class="resume-title">Resume</h2>
+            <h3 class="resume-experience-main-title">
+              Expériences & Compétences
+            </h3>
+            <div class="resume-experience-group">
+              <h4 class="resume-experience-title">
+                Expérience Professionnelle
+              </h4>
+              <ul class="resume-experience-list">
+                <li class="resume-experience-item">
+                  <h5 class="resume-experience-item-title">
+                    Photographe Indépendante (Freelance) | Depuis 2022
+                  </h5>
+                  <p class="resume-experience-item-description">
+                    Réalisation de shootings corporate, portraits de mode et
+                    reportages événementiels pour particuliers et entreprises.
+                  </p>
+                </li>
+                <li class="resume-experience-item">
+                  <h5 class="resume-experience-item-title">
+                    Assistante Studio & Post-production | 2020 - 2022
+                  </h5>
+                  <p class="resume-experience-item-description">
+                    Gestion des éclairages, accueil client et perfectionnement
+                    des techniques de retouche numérique.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-formations-group">
+              <h4 class="resume-formations-title">
+                Formation & Certifications
+              </h4>
+              <ul class="resume-formations-list">
+                <li class="resume-formations-item">
+                  <div class="resume-formations-item-group">
+                    <h5 class="resume-formations-item-title">
+                      Formation Supérieure en Photographie et Image Numérique |
+                      2020
+                    </h5>
+                  </div>
+                </li>
+                <li class="resume-formations-item">
+                  <div class="resume-formations-item-group">
+                    <h5 class="resume-formations-item-title">
+                      Certification Masterclass :
+                    </h5>
+                    <p class="resume-formations-item-description">
+                      L'art du portrait et de la lumière naturelle | 2023
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-competences-group">
+              <h4 class="resume-competences-title">Compétences Techniques</h4>
+              <ul class="resume-competences-list">
+                <li class="resume-competences-item">
+                  <div class="resume-competences-item-group">
+                    <h5 class="resume-competences-item-title">
+                      Prise de vue :
+                    </h5>
+                    <p class="resume-competences-item-description">
+                      Maîtrise de la lumière (studio et naturelle), direction de
+                      modèles.
+                    </p>
+                  </div>
+                </li>
+                <li class="resume-competences-item">
+                  <div class="resume-competences-item-group">
+                    <h5 class="resume-competences-item-title">
+                      Post-traitement :
+                    </h5>
+                    <p class="resume-competences-item-description">
+                      Retouche avancée et colorimétrie (Adobe Lightroom,
+                      Photoshop).
+                    </p>
+                  </div>
+                </li>
+                <li class="resume-competences-item">
+                  <div class="resume-competences-item-group">
+                    <h5 class="resume-competences-item-title">
+                      Gestion de projet :
+                    </h5>
+                    <p class="resume-competences-item-description">
+                      Organisation de sessions, repérage de lieux et restitution
+                      des galeries.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="contact">
+        <div class="contact-container">
+          <div class="contact-content">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact-group">
+              <h3 class="contact-group-title">Créons des souvenirs ensemble</h3>
+              <p class="contact-group-description">
+                Un projet en tête, une envie de shooting ou une question sur mes
+                tarifs ? N'hésitez pas à m'envoyer un message. Racontez-moi
+                votre histoire et l'ambiance que vous recherchez, je vous
+                répondrai sous 48 heures.
+              </p>
+              <ul class="contact-group-infos">
+                <li class="contact-group-infos-item">
+                  <span class="contact-group-infos-item-title">Email : </span
+                  ><a
+                    class="contact-group-infos-item-email"
+                    href="mailto:hello@saraphotographie.fictif"
+                    >hello@saraphotographie.fictif</a
+                  >
+                </li>
+                <li class="contact-group-infos-item">
+                  <span class="contact-group-infos-item-title">Phone : </span
+                  ><span class="contact-group-infos-item-phone"
+                    >+33 (0)6 00 00 00 00</span
+                  >
+                </li>
+                <li class="contact-group-infos-item">
+                  <span class="contact-group-infos-item-title">Studio : </span
+                  ><span class="contact-group-infos-item-studio"
+                    >Disponible partout en France et pour des projets à
+                    l'international.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="contact-group contact-group-form">
+              <h3 class="contact-group-form-title">Formulaire de contact</h3>
+              <form class="contact-form">
+                <div class="contact-form-group">
+                  <label for="username" class="contact-form-label">Name</label>
+                  <input
+                    type="text"
+                    name="user_name"
+                    id="username"
+                    class="contact-form-field contact-form-name"
+                  />
+                </div>
+                <div class="contact-form-group">
+                  <label for="email" class="contact-form-label">Email</label>
+                  <input
+                    type="text"
+                    name="user_email"
+                    id="email"
+                    class="contact-form-field contact-form-email"
+                  />
+                </div>
+                <div class="contact-form-group">
+                  <label for="type_project" class="contact-form-label"
+                    >Type de projet</label
+                  >
+                  <input
+                    type="text"
+                    name="user_type_project"
+                    id="type_project"
+                    class="contact-form-field contact-form-type-project"
+                  />
+                </div>
+                <div class="contact-form-group">
+                  <label for="message" class="contact-form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    type="text"
+                    name="user_message"
+                    id="message"
+                    class="contact-form-field contact-form-email"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="contact-form-group">
+                  <button type="button" class="contact-form-btn">
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="footer-logo-container">
+              <div class="footer-logo-content">
+                <a href="index.html" class="footer-logo-link">
+                  <div class="footer-logo-puce"></div>
+                  <p class="footer-logo-name">Sara photographie</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-socials-media">
+            <div class="footer-socials-media-item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social-media-item-link"
+              >
+                <img src="./assets/icons/instagram-icon.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer-socials-media-item">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social-media-item-link"
+              >
+                <img src="./assets/icons/facebook-icon.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer-socials-media-item">
+              <a href="https://x.com/" class="footer-social-media-item-link">
+                <img src="./assets/icons/twitter-icon.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer-socials-media-item">
+              <a
+                href="https://dribbble.com/"
+                class="footer-social-media-item-link"
+              >
+                <img src="./assets/icons/dribbble-icon.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer-socials-media-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="footer-social-media-item-link"
+              >
+                <img src="./assets/icons/linkedin-icon.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  background-color: #d4d5cf;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.header-container {
+  padding: 20px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-logo-puce {
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  border-radius: 1000px;
+}
+.header-logo-name {
+  color: #000000;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.openMenu {
+  display: flex;
+}
+.closeMenu {
+  display: none;
+}
+
+.navbar-burger .navbar-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #d4d5cf;
+}
+.navbar-burger-shape {
+  border-radius: 1000px;
+  background-color: #000000;
+  padding: 12px 20px;
+  width: 60px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar-burger-shape-title {
+  color: #fff;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  text-transform: uppercase;
+}
+.navbar-burger-shape-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.navbar-burger-shape-item {
+  border: 1px solid #fff;
+  width: 16px;
+}
+.navbar-burger .navbar-menu-list,
+.navbar-wrapper .navbar-menu-list {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+}
+.navbar-burger .navbar-menu-list {
+  padding: 80px 20px;
+  flex-direction: column;
+  gap: 14px;
+}
+.navbar-wrapper .navbar-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.navbar-burger .navbar-menu-item-link,
+.navbar-wrapper .navbar-menu-item-link {
+  display: inline-block;
+  width: 100%;
+  color: #000000;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.navbar-burger .navbar-menu-item-link {
+  font-weight: 500;
+}
+.navbar-wrapper .navbar-menu-item-link {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar-burger-close {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.navbar-burger-close img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero Section */
+.hero-container {
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-profil {
+  margin-bottom: 8px;
+}
+
+.hero-profil-picture img {
+  width: 100%;
+}
+.hero-title {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.hero-description {
+  margin-bottom: 14px;
+}
+.hero-btn-group {
+  display: flex;
+  gap: 12px;
+}
+.hero-btn {
+  border: none;
+  background-color: #000000;
+  padding: 12px;
+  color: #fff;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 18px;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+.hero-btn-discover {
+}
+.hero-btn-contact {
+}
+
+/* About Section */
+.about-container {
+  padding: 80px 20px;
+}
+.about-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.about-behind-goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.about-behind-goal-group {
+  width: 100%;
+}
+.about-subtitle {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Work Section  */
+.work-container {
+  padding: 20px;
+}
+.work-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.work-projects {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.work-subtitle {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.work-subtitle-infos {
+  margin-bottom: 12px;
+}
+.work-galery-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+.work-galery-item {
+  width: 100%;
+}
+.work-galery-item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Resume Section */
+.resume-container {
+  padding: 20px;
+}
+.resume-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.resume-experience-main-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.resume-experience-group,
+.resume-formations-group,
+.resume-competences-group {
+  margin-bottom: 20px;
+}
+
+.resume-experience-list,
+.resume-formations-list,
+.resume-competences-list {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+.resume-experience-item-title {
+  font-size: 14px;
+}
+.resume-formations-item-title,
+.resume-competences-item-title {
+  display: inline;
+  font-size: 14px;
+}
+.resume-formations-item-description,
+.resume-competences-item-description {
+  display: inline;
+  font-size: 14px;
+}
+.resume-experience-item-description {
+  font-size: 14px;
+}
+
+/* Contact section */
+.contact-container {
+  padding: 20px;
+}
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.contact-group {
+  margin-bottom: 40px;
+}
+.contact-group-form-title {
+  margin-bottom: 20px;
+}
+.contact-group-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.contact-group-description {
+  /* font-size: 20px; */
+  margin-bottom: 12px;
+}
+.contact-group-infos {
+  list-style: disc;
+  margin-left: 40px;
+}
+.contact-group-infos-item-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.contact-group-infos-item-email,
+.contact-group-infos-item-phone,
+.contact-group-infos-item-studio {
+  font-size: 15px;
+}
+
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.contact-form-label {
+  padding-bottom: 4px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact-form-field {
+  font-size: 15px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 6px 12px;
+}
+.contact-form-btn {
+  border: none;
+  padding: 12px 20px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer section */
+.footer-container {
+  padding: 40px;
+  background-color: #000000;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo-name {
+  color: #fff;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.footer-socials-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .contact-group-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form-field {
+    width: 340px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* … */
+  .header-container {
+    padding: 40px;
+  }
+  .header-logo-name {
+    font-size: 32px;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .navbar-wrapper {
+    display: block;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    padding: 40px;
+  }
+  .hero-content {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .hero-profil {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .hero-about {
+    width: 100%;
+  }
+
+  /* About Section */
+  .about-container {
+    padding: 40px;
+  }
+  .about-behind-goal {
+    flex-direction: row;
+  }
+
+  /* Work Section */
+  .work-container {
+    padding: 40px;
+  }
+
+  /* Resume Section */
+  .resume-container {
+    padding: 40px;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Hero Section */
+  .hero-container,
+  .about-container,
+  .work-container,
+  .resume-container,
+  .contact-container {
+    padding: 40px 80px;
+  }
+}
+
+@media (min-width: 1536px) {
+  /* Hero Section */
+  .hero-container,
+  .about-container,
+  .work-container,
+  .resume-container,
+  .contact-container {
+    padding: 40px 96px;
+  }
+}
