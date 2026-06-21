@@ -3,24 +3,600 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Styles  -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Docplanner Group</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header-container">
-        <div class="header-content"></div>
+        <div class="header-content">
+          <!-- Header Logo -->
+          <div class="header-logo">
+            <a href="index.html" class="header-logo-link"
+              ><img
+                src="./assets/images/FullLogo.png"
+                alt="Logo du site web Docplanner"
+                class="header-logo-picture"
+            /></a>
+          </div>
+
+          <!-- Header Nav -->
+          <div class="header-nav">
+            <!-- Navbar Burger -->
+            <div class="navbar-burger">
+              <nav class="navbar-burger-menu">
+                <div class="navbar-burger-menu-icon">
+                  <div class="navbar-burger-menu-bars exposed">
+                    <img
+                      src="./assets/icons/menu-icon.svg"
+                      alt=""
+                      class="navbar-burger-menu-bars-icon"
+                    />
+                  </div>
+                  <div class="navbar-burger-menu-close hide">
+                    <img
+                      src="./assets/icons/close-icon.png"
+                      alt=""
+                      class="navbar-burger-menu-close-icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="navbar-burger-list hide">
+                  <ul class="navbar-burger-list-menu">
+                    <li class="navbar-burger-item">
+                      <a
+                        href="index.html"
+                        class="navbar-burger-item-link navbar-burger-item-link-active"
+                        >About us</a
+                      >
+                    </li>
+                    <li class="navbar-burger-item">
+                      <a href="career.html#" class="navbar-burger-item-link"
+                        >Career</a
+                      >
+                    </li>
+                    <li class="navbar-burger-item">
+                      <a href="departments" class="navbar-burger-item-link"
+                        >Departments</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!-- Navbar Wrapper -->
+            <div class="navbar-wrapper hide">
+              <nav class="navbar-wrapper-menu">
+                <div class="navbar-wrapper-list">
+                  <ul class="navbar-wrapper-list-menu">
+                    <li class="navbar-wrapper-item">
+                      <a
+                        href="index.html"
+                        class="navbar-wrapper-item-link navbar-wrapper-item-link-active"
+                        >About us</a
+                      >
+                    </li>
+                    <li class="navbar-wrapper-item">
+                      <a href="career.html#" class="navbar-wrapper-item-link"
+                        >Career</a
+                      >
+                    </li>
+                    <li class="navbar-wrapper-item">
+                      <a href="departments" class="navbar-wrapper-item-link"
+                        >Departments</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Main -->
-    <main class="main"></main>
+    <main class="main">
+      <!-- Leadsection -->
+      <section class="leadsection">
+        <div class="leadsection-container">
+          <div class="leadsection-content">
+            <img
+              src="./assets/images/logo.png"
+              alt="Logo du site web Docplanner"
+              class="leadsection-picture"
+            />
+            <h1 class="leadsection-title">
+              Making the healthcare experience more human
+            </h1>
+            <div class="leadsection-about">
+              <p class="leadsection-about-group">
+                We want patients to find the perfect doctor and book an
+                appointment in the most easy way. The patient journey should be
+                enjoyable, and that's why we are always next to them: to help
+                them find the best possible care. Anytime, anywhere.
+              </p>
+              <p class="leadsection-about-group">
+                We also help doctors to better manage their practice and build
+                their online reputation. With our integrated end-to-end
+                solution, doctors are able not only to improve their online
+                presence, but also to devote their time to what really matters:
+                their patients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Forsection -->
+      <section class="forsection">
+        <div class="forsection-container">
+          <div class="forsection-content">
+            <div class="forsection-cards">
+              <!-- Item 1 -->
+              <div class="forsection-card-item">
+                <div class="forsection-card-item-group">
+                  <img
+                    class="forsection-card-item-icon"
+                    src="./assets/icons/icon-patients.svg"
+                    alt="patient"
+                  />
+                  <p class="forsection-card-item-title">For patients</p>
+                  <p class="forsection-card-item-description">
+                    Find a doctor, book a visit and solve any health-related
+                    doubt
+                  </p>
+                </div>
+                <div class="forsection-card-item-group">
+                  <select>
+                    <option>Choose country</option>
+                    <option value="#">Argentina</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Chile</option>
+                    <option value="#">Colombia</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Germany</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Mexico</option>
+                    <option value="#">Peru</option>
+                    <option value="#">Poland</option>
+                    <option value="#">PortUgal</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="forsection-card-item">
+                <div class="forsection-card-item-group">
+                  <img
+                    class="forsection-card-item-icon"
+                    src="./assets/icons/icon-patients.svg"
+                    alt="patient"
+                  />
+                  <p class="forsection-card-item-title">For doctors</p>
+                  <p class="forsection-card-item-description">
+                    Save time managing visits and cut no-shows by half
+                  </p>
+                </div>
+                <div class="forsection-card-item-group">
+                  <select>
+                    <option>Choose country</option>
+                    <option value="#">Argentina</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Chile</option>
+                    <option value="#">Colombia</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Germany</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Mexico</option>
+                    <option value="#">Peru</option>
+                    <option value="#">Poland</option>
+                    <option value="#">PortUgal</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="forsection-card-item">
+                <div class="forsection-card-item-group">
+                  <img
+                    class="forsection-card-item-icon"
+                    src="./assets/icons/icon-patients.svg"
+                    alt="patient"
+                  />
+                  <p class="forsection-card-item-title">For clinics</p>
+                  <p class="forsection-card-item-description">
+                    Deliver an exceptional patient experience in your clinic
+                  </p>
+                </div>
+                <div class="forsection-card-item-group">
+                  <select>
+                    <option>2 to 20 specialists</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Mexico</option>
+                    <option value="#">Poland</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                  </select>
+                  <select>
+                    <option>More than 20 specialis</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Mexico</option>
+                    <option value="#">Poland</option>
+                    <option value="#">Spain</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company culture section -->
+      <section class="company-culture">
+        <div class="company-culture-container">
+          <div class="company-culture-content">
+            <div class="company-culture-group">
+              <p class="company-culture-description">
+                We are a global <br />
+                company <br />
+                with local culture
+              </p>
+            </div>
+            <div class="company-culture-group">
+              <div class="company-culture-grid">
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/images/znanylekarz.png"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/images/Doctoralia.png"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/images/MioDottore.png"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/images/doktortakvimi.png"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/images/Znamylekar.jpg"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/icons/logo-jameda.svg"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/icons/logo-tuotempo.svg"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/icons/logo-gipo-primary.svg"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/icons/logo-clinicloud.svg"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+                <div class="company-culture-grid-item">
+                  <img
+                    src="./assets/icons/logo-feegow.svg"
+                    class="company-culture-grid-item-logo"
+                    alt="Logo des partenaires"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benchmark section -->
+      <section class="benchmark">
+        <div class="benchmark-container">
+          <div class="benchmark-content">
+            <!-- Benchmark about -->
+            <div class="benchmark-about">
+              <h2 class="benchmark-about-title">
+                The world's biggest <br />
+                healthcare platform
+              </h2>
+              <p class="benchmark-about-description">
+                We work from 9 offices all over the world, bringing Docplanner
+                <br />
+                Group to life in 13 countries.
+              </p>
+              <div class="benchmark-about-logo">
+                <img
+                  src="./assets/images/logocropped.png"
+                  alt="Logo du site web Docplanner"
+                  class="benchmark-about-logo-picture"
+                />
+              </div>
+            </div>
+
+            <!-- Benchmark Cards -->
+            <div class="benchmark-cards">
+              <div class="benchmark-card">
+                <img
+                  src="./assets/images/flag.png"
+                  alt="Card Icon"
+                  class="benchmark-card-icon"
+                />
+                <h3 class="benchmark-card-title">Leader in 13 countries</h3>
+                <p class="benchmark-card-description">
+                  Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey,
+                  Colombia, Czech Republic, Portugal, Argentina, Peru and Chile
+                </p>
+              </div>
+              <div class="benchmark-card">
+                <img
+                  src="./assets/images/visits.png"
+                  alt="Card Icon"
+                  class="benchmark-card-icon"
+                />
+                <h3 class="benchmark-card-title">15,000,000 appointments</h3>
+                <p class="benchmark-card-description">booked last month</p>
+              </div>
+              <div class="benchmark-card">
+                <img
+                  src="./assets/images/patients.png"
+                  alt="Card Icon"
+                  class="benchmark-card-icon"
+                />
+                <h3 class="benchmark-card-title">90,000,000 patients</h3>
+                <p class="benchmark-card-description">
+                  visit our websites each month
+                </p>
+              </div>
+              <div class="benchmark-card">
+                <img
+                  src="./assets/images/doctors.png"
+                  alt="Card Icon"
+                  class="benchmark-card-icon"
+                />
+                <h3 class="benchmark-card-title">210,000 active doctors</h3>
+                <p class="benchmark-card-description">trust our solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision section -->
+      <section class="vision">
+        <div class="vision-container">
+          <div class="vision-content">
+            <h2 class="vision-title">
+              Improve the lives of millions. <br />
+              Change yours forever
+            </h2>
+            <p class="vision-description">
+              More than 2800 team mates share our same vision, goals and
+              passion. With offices in Warsaw, Barcelona, Munich, Istanbul,
+              Rome, Rio, Bologna, Mexico City and Curitiba, our search for great
+              talent never stops.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our cities section -->
+      <section class="our-cities">
+        <div class="our-cities-container">
+          <div class="our-cities-content">
+            <div class="our-cities-cards">
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/warsaw.png"
+                  alt="Ville de item"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Warsaw</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/barcelona.png"
+                  alt="Ville de Barcelona"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Barcelona</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/munich.png"
+                  alt="Ville de Munich"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Munich</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/istanbul.png"
+                  alt="Ville de Istanbul"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Istanbul</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/rome.png"
+                  alt="Ville de Rome"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Rome</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/bologna.png"
+                  alt="Ville de Bologna"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Bologna</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/curitiba.png"
+                  alt="Ville de Curitiba"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Curitiba</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/rio-janeiro.png"
+                  alt="Ville de Rio De Janeiro"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Rio De Janeiro</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+              <div class="our-cities-card">
+                <img
+                  src="./assets/images/mexico-city.png"
+                  alt="Ville de Mexico City"
+                  class="our-cities-card-photo"
+                />
+                <div class="our-cities-card-group">
+                  <h3 class="our-cities-card-group-title">Mexico City</h3>
+                  <button type="button" class="our-cities-card-group-btn">
+                    see openings
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Us section -->
+      <section class="join-us">
+        <div class="join-us-container">
+          <div class="join-us-content">
+            <h3 class="join-us-title">Sounds interesting? Join us now!</h3>
+            <button type="button" class="join-us-btn">
+              see all curent openings
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-content"></div>
+        <div class="footer-content">
+          <!-- Fooer countries -->
+          <div class="footer-countries">
+            <p>
+              We are leaders in 13 countries:
+              <a href="#">Poland</a>, <a href="#">Turky</a>,
+              <a href="#">Spain</a>, <a href="#">Italy</a>,
+              <a href="#">Germany</a>, <a href="#">Czech Republic</a>,
+              <a href="#">Portugal</a>, <a href="#">Mexico</a>,
+              <a href="#">Colombia</a>, <a href="#">Brazil</a>,
+              <a href="#">Argentina</a>, <a href="#">Peru</a>,
+              <a href="#">Chile</a>
+            </p>
+          </div>
+
+          <!-- Footer Privacy -->
+          <div class="footer-privacy">
+            This site uses cookies to deliver services in accordance with this
+            Privacy Policy. You can specify the conditions for storing or
+            accessing cookies on your browser. <br />
+            www.docplanner.com © 2023
+          </div>
+        </div>
       </div>
     </footer>
   </body>
