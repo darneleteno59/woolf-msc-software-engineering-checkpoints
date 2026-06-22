@@ -8,13 +8,15 @@ This repository contains all checkpoints, assessments, notes, and practical exer
 
 ## Progress
 
-| Chapter | Topic                                                                     | Status         |
-| ------- | ------------------------------------------------------------------------- | -------------- |
-| 01      | Welcome & Environment SETUP                                               | ✅ Completed   |
-| 02      | Introduction to Problem-Solving Techniques: Part 1 : Intro to the Web     | ✅ Completed   |
-| 03      | Practical Software Engineering : Integration and Version Control with Git | ✅ Completed   |
-| 04      | Front End UI UX Development : HTML Basics                                 | ✅ Completed   |
-| 05      | Front End UI UX Development : CSS Essentials                              | ✅ Completed   |
+| Chapter | Topic                                                                                    | Status         |
+| ------- | ---------------------------------------------------------------------------------------- | -------------- |
+| 01      | Welcome & Environment SETUP                                                              | ✅ Completed   |
+| 02      | Introduction to Problem-Solving Techniques: Part 1 : Intro to the Web                    | ✅ Completed   |
+| 03      | Practical Software Engineering : Integration and Version Control with Git                | ✅ Completed   |
+| 04      | Front End UI UX Development : HTML Basics                                                | ✅ Completed   |
+| 05      | Front End UI UX Development : CSS Essentials                                             | ✅ Completed   |
+| 06      | Front End UI UX Development : Responsive Web Design with CSS Libraries I(Bootstrap)      | 🚧 In Progress |
+
 
 ## Goals
 
