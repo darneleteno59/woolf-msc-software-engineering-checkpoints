@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Geist:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <title>Foodly</title>
+  </head>
+  <body class="d-flex flex-column" style="min-height: 100vh">
+    <header
+      class="header bg-transparent p-3 position-absolute top-0 start-0 end-0"
+    >
+      <div class="header-container">
+        <div
+          class="header-content d-flex justify-content-between align-items-center"
+        >
+          <div class="header-logo" style="width: 100px; height: auto">
+            <img
+              src="public/assets/images/logo-foodly.png"
+              alt="Foodly logo"
+              class="header-logo-image img-fluid"
+            />
+          </div>
+
+          <div class="header-nav">
+            <nav class="nav">
+              <div class="nav-mobile d-lg-none">
+                <div
+                  class="nav-menu-mobile-background d-none position-absolute top-0 start-0 bottom-0 end-0 bg-white"
+                >
+                  <ul class="nav-menu-mobile list-unstyled mb-0 px-5 py-3">
+                    <li class="nav-item">
+                      <a href="#home" class="nav-link d-block text-bg-dark"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#menu" class="nav-link d-block text-bg-dark"
+                        >Menu</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link d-block text-bg-dark"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link d-block text-bg-dark"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Menu burger -->
+                <div
+                  class="burger-menu d-flex flex-column gap-1"
+                  style="cursor: pointer"
+                >
+                  <span
+                    class="burger-icon burger-icon-top bg-white"
+                    style="height: 3px; width: 25px"
+                  ></span>
+                  <span
+                    class="burger-icon burger-icon-middle bg-white"
+                    style="height: 3px; width: 17px"
+                  ></span>
+                  <span
+                    class="burger-icon burger-icon-bottom bg-white"
+                    style="height: 3px; width: 14px"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="nav-wrapper d-none d-lg-flex">
+                <ul class="nav-menu-wrapper d-flex gap-4 list-unstyled mb-0">
+                  <li class="nav-item">
+                    <a
+                      href="#home"
+                      class="nav-link text-white fw-medium rounded bg-black"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#ourMenu"
+                      class="nav-link text-white fw-medium rounded bg-black"
+                      >Menu</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#aboutUs"
+                      class="nav-link text-white fw-medium rounded bg-black"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#contact"
+                      class="nav-link text-white fw-medium rounded bg-black"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow-1">
+      <section
+        class="hero min-vh-100 d-flex flex-column justify-content-center px-2 py-3"
+        id="hero"
+        style="
+          background-image: url(&quot;public/assets/images/resto.jpg&quot;);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container">
+          <div class="hero-content">
+            <h1
+              class="hero-description fw-bold text-center mb-3"
+              style="color: #fff; font-family: Boogaloo, sans-serif"
+            >
+              Why stay hungry when you <br class="" />
+              can order from foodly.
+            </h1>
+            <div class="text-center">
+              <button type="button" class="btn btn-cta text-white">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-menu" id="ourMenu">
+        <div class="container px-3 py-5">
+          <div class="our-menu-content">
+            <h2 class="our-menu-title text-center mb-3">Our Menu</h2>
+            <div class="our-menu-description mb-5 text-center">
+              Discover our delicious selection of dishes made with the freshest
+              ingredients.
+            </div>
+
+            <div class="our-menu-items-wrapper container">
+              <div class="row row-gap-5">
+                <div class="our-menu-item col-12 col-md-6 col-lg-4">
+                  <div class="menu-item">
+                    <img
+                      src="public/assets/images/delicious-dish.jpg"
+                      alt="Delicious Dish"
+                      class="our-menu-item-image rounded mb-3"
+                    />
+                    <div class="our-menu-item-content">
+                      <h3 class="our-menu-item-title">Delicious Dish</h3>
+                      <p class="our-menu-item-description">
+                        A mouth-watering creation made with the finest
+                        ingredients.
+                      </p>
+                      <span
+                        class="our-menu-item-price fw-semibold"
+                        style="font-family: Geist, sans-serif"
+                        >$12.99</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="our-menu-item col-12 col-md-6 col-lg-4">
+                  <div class="menu-item">
+                    <img
+                      src="public/assets/images/shrimp-scampi.jpg"
+                      alt="Shrimp Scampi"
+                      class="our-menu-item-image rounded mb-3"
+                    />
+                    <div class="our-menu-item-content">
+                      <h3 class="our-menu-item-title">Shrimp Scampi</h3>
+                      <p class="our-menu-item-description">
+                        A classic Italian dish with succulent shrimp in a garlic
+                        butter sauce.
+                      </p>
+                      <span class="our-menu-item-price fw-semibold"
+                        >$15.99</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="our-menu-item col-12 col-md-6 col-lg-4">
+                  <div class="menu-item">
+                    <img
+                      src="public/assets/images/calamari-dish.jpg"
+                      alt="Calamari Dish"
+                      class="our-menu-item-image rounded mb-3"
+                    />
+                    <div class="our-menu-item-content">
+                      <h3 class="our-menu-item-title">Calamari Dish</h3>
+                      <p class="our-menu-item-description">
+                        Crispy fried calamari served with a tangy marinara
+                        dipping sauce.
+                      </p>
+                      <span class="our-menu-item-price fw-semibold"
+                        >$14.99</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="our-menu-item col-12 col-md-6 col-lg-4">
+                  <div class="menu-item">
+                    <img
+                      src="public/assets/images/grilled-salmon.jpg"
+                      alt="Grilled Salmon"
+                      class="our-menu-item-image rounded mb-3"
+                    />
+                    <div class="our-menu-item-content">
+                      <h3 class="our-menu-item-title">Grilled Salmon</h3>
+                      <p class="our-menu-item-description">
+                        Fresh salmon fillet grilled to perfection and served
+                        with seasonal vegetables.
+                      </p>
+                      <span class="our-menu-item-price fw-semibold"
+                        >$18.99</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="our-menu-item col-12 col-md-6 col-lg-4">
+                  <div class="menu-item">
+                    <img
+                      src="public/assets/images/panini-sandwich.jpg"
+                      alt="Panini Sandwich"
+                      class="our-menu-item-image rounded mb-3"
+                    />
+                    <div class="our-menu-item-content">
+                      <h3 class="our-menu-item-title">Panini Sandwich</h3>
+                      <p class="our-menu-item-description">
+                        A warm and toasty panini filled with fresh ingredients
+                        and melted cheese.
+                      </p>
+                      <span class="our-menu-item-price fw-semibold"
+                        >$19.99</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="our-menu-item col-12 col-md-6 col-lg-4">
+                  <div class="menu-item">
+                    <img
+                      src="public/assets/images/pasta-carbornara.jpg"
+                      alt="Pasta Carbonara"
+                      class="our-menu-item-image rounded mb-3"
+                    />
+                    <div class="our-menu-item-content">
+                      <h3 class="our-menu-item-title">Pasta Carbonara</h3>
+                      <p class="our-menu-item-description">
+                        Carbonara pasta dish made with cured pork, hard cheese,
+                        eggs, salt, and black pepper...
+                      </p>
+                      <span class="our-menu-item-price fw-semibold"
+                        >$20.99</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us" id="aboutUs">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-1 order-lg-0">
+              <img
+                src="public/assets/images/about-members.jpg"
+                alt="Our restaurant"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="about-us-content">
+                <h2>About Us</h2>
+                <p>
+                  We are a team of passionate food enthusiasts dedicated to
+                  providing the best dining experience. Our mission is to serve
+                  delicious, high-quality meals made with the finest
+                  ingredients. At Foodly, we believe that food is not just about
+                  sustenance; it's an experience that brings people together.
+                  Join us on our journey to create memorable moments through
+                  exceptional cuisine and warm hospitality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container py-5">
+          <div class="contact-content">
+            <div class="h2 contact-title mb-3 text-center">Contact Us</div>
+            <p class="contact-description mb-4 text-center">
+              Have questions or feedback? Reach out to us and we'll be happy to
+              assist you.
+            </p>
+            <form
+              class="contact-form container"
+              id="contactForm"
+              action="#"
+              method="POST"
+            >
+              <div class="form-group mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group mb-3 text-center">
+                <button type="submit" class="btn btn-dark">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="container py-5">
+        <div class="footer-content">
+          <div
+            class="footer-logo mb-4 mx-auto"
+            style="width: 100px; height: auto"
+          >
+            <img
+              src="public/assets/images/logo-foodly.png"
+              alt=""
+              class="header-logo-image img-fluid"
+            />
+          </div>
+
+          <div class="footer-nav-wrapper mb-4">
+            <ul
+              class="footer-nav-menu-wrapper list-unstyled d-flex flex-lg-column align-items-lg-center justify-content-center gap-5 gap-lg-4"
+            >
+              <li class="footer-nav-item">
+                <a href="#home" class="nav-link text-white">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#menu" class="nav-link text-white">Menu</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#about" class="nav-link text-white">About Us</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#contact" class="nav-link text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="footer-socials-media d-flex justify-content-center gap-4 mb-4"
+          >
+            <a href="#" class="social-link">
+              <img
+                src="public/assets/icons/whatsapp-icon.svg"
+                alt="WhatsApp"
+                class="whatsapp-icon"
+              />
+            </a>
+            <a href="#" class="social-link">
+              <img
+                src="public/assets/icons/facebook-icon.svg"
+                alt="Facebook"
+                class="facebook-icon"
+              />
+            </a>
+            <a href="#" class="social-link">
+              <img
+                src="public/assets/icons/instagram-icon.svg"
+                alt="Instagram"
+                class="instagram-icon"
+              />
+            </a>
+            <a href="#" class="social-link">
+              <img
+                src="public/assets/icons/tiktok-icon.svg"
+                alt="TikTok"
+                class="tiktok-icon"
+              />
+            </a>
+          </div>
+
+          <div class="footer-copyright">
+            <p class="text-secondary text-center mb-0">
+              &copy; 2026 Foodly Company. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/* 
+Font styles
+  font-family: "Geist", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Boogaloo", sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Geist", sans-serif;
+}
+
+.contact-form {
+  max-width: 384px;
+}
+
+@media (min-width: 992px) {
+  .hero-description {
+    font-size: 56px;
+  }
+  .our-menu {
+    padding: 80px 40px;
+  }
+  .our-menu-description {
+    font-size: 20px;
+  }
+}
+
+.btn-cta {
+  background-color: #d87744;
+}
+
+.menu-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
